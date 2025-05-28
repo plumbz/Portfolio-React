@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@testing-library/react": "^16.3.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-scroll": "^1.9.3",
+    "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
