@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar/navbar";
 import Intro from "./components/Intro/intro";
+import Skills from "./components/Skills/skills";
 
 function App() {
   
@@ -8,6 +9,7 @@ function App() {
       <div clasName="App">
       <Navbar/>
       <Intro/>
+      <Skills/>
       </div>
      
     </>

@@ -4,11 +4,11 @@
     box-sizing: border-box;
     text-decoration: none;
     background: transparent;
-    font-family: 'Poppins';
+    font-family: 'Nunito+Sans', sans-serif;
 }
 
 body {
-    background-color: rgb(254, 249, 249);
+    background-color: rgb(248, 244, 244);
     color: white;
     overflow: hidden;
     overflow-y: scroll;
