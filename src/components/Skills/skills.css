@@ -20,7 +20,7 @@
 }
 
 .skillDesc {
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1rem;
     max-width: 51rem;
     padding: 0 2rem;
@@ -49,4 +49,28 @@
     margin-right: 2rem;
 }
 
-.skillBarText {}
+.skillBarText>p {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width:720px) {
+    .skillBarText>p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .skillBarText>p {
+        font-size: 3vw;
+    }
+
+    .skillBarImg {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+
+    .skillBarText>h2 {
+        font-size: 5vw;
+    }
+}
