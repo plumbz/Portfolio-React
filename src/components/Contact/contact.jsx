@@ -6,7 +6,7 @@ import Yahoo from '../../assets/yahoo.logo.png';
 import Github from '../../assets/github.logo.png';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
-
+import CaseStudypdf from '../../assets/caseStudy.pdf';
 
 const Contact = () => {
     const form = useRef();
@@ -39,7 +39,12 @@ const Contact = () => {
             <div className='CaseImgs'>
                 <img src={CaseStudy} alt="CaseStudy" className="CaseImg"/>
             </div>
-             <button className="workBtn">See More</button>   
+             <button 
+                className="btn" 
+                onClick={() => window.open(CaseStudypdf, "_blank")}
+              >
+                See More
+              </button>
             <div id="contact">
                 <h1 className="contactTitle">Contact Me</h1>
                 <span className="contactDesc">Please fill out the form below to discuss any work opportunities.</span>
@@ -47,7 +52,7 @@ const Contact = () => {
                     <input type='text' className="name" placeholder='Your Name' name='your_name'/>
                     <input type='email' className='email' placeholder='Your Email' name='your_email' />
                     <textarea className='msg' name='message' rows="5" placeholder='Your Message'></textarea>
-                    <button type="submit" value="Send" className="submitBtn">Submit</button>
+                    <button type="submit" value="Send" className="btn">Submit</button>
                     <div className='linksContainer'>
                         <img src={Facebook} alt="Facebook" className='link'/>
                         <img src={Yahoo} alt="Yahoo" className='link'/>
