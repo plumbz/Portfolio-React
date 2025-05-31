@@ -22,23 +22,23 @@ const Skills = () => {
                 <div className='skillBar'>
                     <img src={Resume} alt="CV" className='skillBarImg'/>
                     <div className='skillBarText'>
+                        <p>Learn my professional background by downloading my CV.</p>
                         <a href={CV} download className="btn">Download PDF</a>
-                        <p>learn my professional background by downloading my CV.</p>
-                        
                     </div>
                 </div>     
                 <div className='skillBar'>
                     <img src={Skill} alt="Skill" className='skillBarImg'/>
                     <div className='skillBarText'>
-                        <h2>My Skills</h2>
                         <p>the skills I aquaire throughout my experience.</p>
+                        <a className="btn" href="https://github.com/plumbz/Portfolio-website" target="_blank">See
+                    project on GitHub </a>
                     </div>
                 </div>
                 <div className='skillBar'>
                     <img src={Hobbies} alt="Hobbies" className='skillBarImg'/>
                     <div className='skillBarText'>
                         <h2>My Hobbies</h2>
-                        <p>you can know me more by viewing my favorite activities</p>
+                        <p>get to know me more by viewing my favorite activities</p>
                     </div>
                 </div>
              </div>   

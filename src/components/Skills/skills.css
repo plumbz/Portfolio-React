@@ -57,6 +57,16 @@
     margin: 1rem;
 }
 
+.btnGit {
+    background-color: rgb(93, 88, 88);
+    color: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+}
+
 @media screen and (max-width:720px) {
     .skillBarText>p {
         font-size: 2vw;
