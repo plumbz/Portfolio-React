@@ -1,5 +1,5 @@
 #skills {
-    color: rgb(93, 88, 88);
+
     overflow: hidden;
     height: calc(100vh - 4rem);
     width: 100vw;
@@ -13,7 +13,7 @@
 }
 
 .skillTitle {
-    color: rgb(93, 88, 88);
+    color: rgb(249, 247, 247);
     font-size: 3rem;
     font-weight: 600;
     padding-top: 3rem;
@@ -21,6 +21,7 @@
 }
 
 .skillDesc {
+    color: rgb(199, 182, 182);
     font-weight: 400;
     font-size: 1rem;
     max-width: 51rem;
@@ -37,10 +38,10 @@
 
 .skillBar {
     display: flex;
-    margin: 1rem;
+    margin: 2rem;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    background: rgb(234, 224, 224);
+    background: rgb(117, 110, 110);
 }
 
 .skillBarImg {
@@ -51,8 +52,9 @@
 }
 
 .skillBarText>p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 200;
+    margin: 1rem;
 }
 
 @media screen and (max-width:720px) {

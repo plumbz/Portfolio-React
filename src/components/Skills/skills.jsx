@@ -1,8 +1,9 @@
 import React from 'react';
 import './skills.css';
-import CV from '../../assets/logo.png';
-import Hobbies from '../../assets/logo.png';
-import Skill from '../../assets/logo.png';
+import Resume from '../../assets/resume.png';
+import Skill from '../../assets/skill.png';
+import Hobbies from '../../assets/hobbies.png';
+import CV from '../../assets/CV.pdf';
 
 
 const Skills = () => {
@@ -19,17 +20,18 @@ const Skills = () => {
             </span>
             <div className='skillBars'>
                 <div className='skillBar'>
-                    <img src={CV} alt="CV" className='skillBarImg'/>
+                    <img src={Resume} alt="CV" className='skillBarImg'/>
                     <div className='skillBarText'>
-                        <h2>Download my CV</h2>
-                        <p>egal</p>
+                        <a href={CV} download className="btn">Download PDF</a>
+                        <p>learn my professional background by downloading my CV.</p>
+                        
                     </div>
                 </div>     
                 <div className='skillBar'>
                     <img src={Skill} alt="Skill" className='skillBarImg'/>
                     <div className='skillBarText'>
                         <h2>My Skills</h2>
-                        <p>the skills I aquaire throught my experience.</p>
+                        <p>the skills I aquaire throughout my experience.</p>
                     </div>
                 </div>
                 <div className='skillBar'>
