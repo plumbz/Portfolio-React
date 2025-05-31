@@ -1,7 +1,8 @@
 #skills {
     color: rgb(93, 88, 88);
     overflow: hidden;
-    width: 100dvw;
+    height: calc(100vh - 4rem);
+    width: 100vw;
     max-width: 65rem;
     display: flex;
     flex-direction: column;

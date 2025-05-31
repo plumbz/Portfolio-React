@@ -1,32 +1,47 @@
-#CaseStudy {
+#contactPage {
+    min-height: calc(100vh - 4rem);
     color: rgb(93, 88, 88);
+    overflow: hidden;
     width: 100%;
-    max-width: 1200px;
+    max-width: 60rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    padding: 2rem 1rem;
 }
 
 .CaseImg {
     object-fit: cover;
-    width: 30%;
-    min-width: 9rem;
-    padding: 0.25rem;
+    width: 70%;
     margin: auto;
-
+    margin-bottom: 3rem;
+    margin-top: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 2%;
 }
 
 .caseTitle {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    padding: 1rem;
 
+}
+
+#contact {
+    min-height: calc(100vh - 4rem);
+    color: rgb(93, 88, 88);
+    overflow: hidden;
+    width: 100%;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .contactTitle {
@@ -41,13 +56,12 @@
 
 }
 
+
 .contactDesc {
-    color: rgb(93, 88, 88);
-    padding: 1rem;
-    font-size: meduim;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 51rem;
+    padding: 0 2rem;
 }
 
 .contactForm {
@@ -56,6 +70,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
 }
 
 .name,
@@ -79,6 +95,16 @@
     padding: 0.75rem 3.5rem;
     border-radius: 0.5rem;
 }
+
+.link {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-top: 2rem;
+    margin: 1rem;
+    padding: auto;
+}
+
 
 /* Responsive font and image for smaller screens */
 @media (max-width: 768px) {
