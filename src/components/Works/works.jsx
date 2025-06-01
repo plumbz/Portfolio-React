@@ -45,7 +45,7 @@ const Works = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     return (
         <section id='works'> 
-            <h2 className='worksTitle'>My Portfolio</h2>
+            <h2 className='worksTitle'>Projects</h2>
             <span className="worksDesc">I take pride in paying attention the smallest details and making sure that my work is well made.
                 I am excited to bring my skills and experience to help business achieve thier goals and create a strong online presence.
             </span>

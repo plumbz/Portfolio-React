@@ -4,6 +4,7 @@ import Resume from '../../assets/resume.png';
 import Skill from '../../assets/skill.png';
 import Hobbies from '../../assets/hobbies.png';
 import CV from '../../assets/CV.pdf';
+import Passions from  '../../assets/passion.pdf';
 
 
 const Skills = () => {
@@ -29,7 +30,7 @@ const Skills = () => {
                 <div className='skillBar'>
                     <img src={Skill} alt="Skill" className='skillBarImg'/>
                     <div className='skillBarText'>
-                        <p>the skills I aquaire throughout my experience.</p>
+                        <p>These are the skills I acquired throughout my experience.</p>
                         <a className="btn" href="https://github.com/plumbz/Portfolio-website" target="_blank">See
                     project on GitHub </a>
                     </div>
@@ -37,8 +38,8 @@ const Skills = () => {
                 <div className='skillBar'>
                     <img src={Hobbies} alt="Hobbies" className='skillBarImg'/>
                     <div className='skillBarText'>
-                        <h2>My Hobbies</h2>
-                        <p>get to know me more by viewing my favorite activities</p>
+                        <p>Get to know me more by viewing my favorite activities.</p>
+                        <a href={Passions} download className="btn">Check my hobbies. </a>
                     </div>
                 </div>
              </div>   
