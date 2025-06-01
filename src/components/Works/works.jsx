@@ -8,12 +8,6 @@ import Portfolio5 from '../../assets/portfolio5.png';
 import Portfolio6 from '../../assets/portfolio6.png';
 
 const portfolioItems = [
- {
-    img: Portfolio1,
-    title: "Pokédex",
-    desc: "Pokédex is a web application designed to provid information about the Pokémon. The app features dynamic data fetching from an external API. Created using HTML, CSS and JavaScript",
-    link: "https://plumbz.github.io/"
-  },
 
   { img: Portfolio2,
     title: "MyFlix-React",
@@ -33,12 +27,19 @@ const portfolioItems = [
   {   img: Portfolio5,
     title: "Chat Time",
     desc: "ChatTime is a chat app for mobile devices that built with React Native. The app will provide users with a chat interface and option to sare images and thier location.",
-    link: "https://plumbz.github.io/ChatTime" },
+    link: "https://plumbz/ChatTime" },
 
   {  img: Portfolio6,
     title: "MyFlix-Angular",
     desc: "A movie application built with Angular. offering users the ability to browse, search, and manage their favorite movies. This app highlights responsive design, Angular Material integration, and RESTful API connectivity for a seamless user experience.",
     link: "https://plumbz.github.io/myFlix-Angular-client/welcome"},
+     {
+      
+    img: Portfolio1,
+    title: "Pokédex",
+    desc: "Pokédex is a web application designed to provid information about the Pokémon. The app features dynamic data fetching from an external API. Created using HTML, CSS and JavaScript",
+    link: "https://plumbz.github.io/"
+  },
 ]
 
 const Works = () => {

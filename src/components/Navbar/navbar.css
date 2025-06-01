@@ -50,3 +50,52 @@
     height: 1rem;
 
 }
+
+.active {
+    color: rgb(105, 77, 77);
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(105, 77, 77);
+
+}
+
+.mobMenu {
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+
+.navMenu {
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background-color: rgb(163, 143, 143);
+    border-radius: 1rem;
+    /* rgb(143, 114, 114) */
+    cursor: pointer;
+}
+
+.listItem {
+    padding: 0.25rem 2rem;
+    margin: 0.25rem;
+    /* background: rgb(142, 121, 121); */
+}
+
+@media screen and (max-width:840px) {
+    .mobMenu {
+        display: flex;
+    }
+
+    .desktopMenu {
+        display: none;
+    }
+
+    .desktopMenuBtn {
+        display: none;
+    }
+}
