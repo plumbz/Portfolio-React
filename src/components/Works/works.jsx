@@ -12,34 +12,39 @@ const portfolioItems = [
   { img: Portfolio2,
     title: "MyFlix-React",
     desc: "MyFlix is a web application build using React. This application allows users to browse, search, and explore details about movies, directors, and genres, with additional functionalitiesfor user account management and personalization.",
-    link: "https://my-testflix.netlify.app/login" },
+    link: "https://my-testflix.netlify.app/login",
+      github: "https://github.com/plumbz/myFlix-client"},
 
   {  img: Portfolio3,
     title: "Movie API",
     desc: "Movie API, a RESTful backend application for managing movies, users, and favorite movie lists. It serves data about movies, directors, and genres, enabling users to interact with this data securely.",
-    link: "https://github.com/plumbz/movie-api" },
+    github: "https://github.com/plumbz/movie-api" },
 
   {  img: Portfolio4,
     title: "MeetApp",
     desc: "A serverless, progressive web application with React using a test- driven technique. The application uses the Google Calendar API to fetch upcoming events.",
-    link: "https://meet-f7gvyt75m-plumbzs-projects.vercel.app" },
+    link: "https://meet-f7gvyt75m-plumbzs-projects.vercel.app",
+   github: "https://github.com/plumbz/meet"  },
 
   {   img: Portfolio5,
     title: "Chat Time",
     desc: "ChatTime is a chat app for mobile devices that built with React Native. The app will provide users with a chat interface and option to sare images and thier location.",
-    link: "https://plumbz/ChatTime" },
+    link: "https://plumbz/ChatTime", 
+    github: "https://github.com/plumbz/ChatTime" },
 
   {  img: Portfolio6,
     title: "MyFlix-Angular",
     desc: "A movie application built with Angular. offering users the ability to browse, search, and manage their favorite movies. This app highlights responsive design, Angular Material integration, and RESTful API connectivity for a seamless user experience.",
-    link: "https://plumbz.github.io/myFlix-Angular-client/welcome"},
+    link: "https://plumbz.github.io/myFlix-Angular-client/welcome",
+    github: "https://github.com/plumbz/myFlix-Angular-client"},
      {
       
     img: Portfolio1,
     title: "Pokédex",
     desc: "Pokédex is a web application designed to provid information about the Pokémon. The app features dynamic data fetching from an external API. Created using HTML, CSS and JavaScript",
-    link: "https://plumbz.github.io/"
-  },
+    link: "https://plumbz.github.io/",
+   github: "https://github.com/plumbz/myFlix-Angular-client"},
+     
 ]
 
 const Works = () => {
@@ -63,14 +68,27 @@ const Works = () => {
               <div className="modalOverlay">
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
-            <a
+            {item.link && (
+              <a
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modalLink"
-                >
-                View Project
-                </a>
+              >
+                View Live
+              </a>
+            )}
+            {item.github && (
+              <a
+                href={item.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="modalLink"
+              >
+                View Code
+              </a>
+            )}
+
               </div>
             )}
           </div>
