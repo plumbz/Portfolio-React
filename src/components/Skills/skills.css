@@ -14,8 +14,27 @@
     box-sizing: border-box;
 }
 
+.btn {
+    background-color: rgb(93, 88, 88);
+    color: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rgb(120, 115, 115);
+    transform: scale(1.03);
+}
+
 .skillTitle {
-    color: rgb(249, 247, 247);
+    color: rgb(230, 221, 221);
     font-size: 3rem;
     font-weight: 600;
     padding-top: 3rem;
@@ -23,7 +42,7 @@
 }
 
 .skillDesc {
-    color: rgb(199, 182, 182);
+    color: rgb(100, 63, 63);
     font-weight: 400;
     font-size: 1rem;
     max-width: 51rem;
@@ -43,7 +62,7 @@
     margin: 2rem;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    background: rgb(117, 110, 110);
+    background: rgb(154, 146, 146);
 }
 
 .skillBarImg {
@@ -73,6 +92,11 @@
     .skillBarText>p {
         font-size: 2vw;
     }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -87,5 +111,12 @@
 
     .skillBarText>h2 {
         font-size: 5vw;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        box-sizing: border-box;
     }
 }

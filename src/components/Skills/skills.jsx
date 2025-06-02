@@ -11,7 +11,7 @@ const Skills = () => {
     return (
         <section id='skills'>
             <span className='skillTitle'>About Me</span>
-            <span className='SkillDesc'> I am a web developer with an educational background in Physics. I was once a
+            <span className='skillDesc'> I am a web developer with an educational background in Physics. I was once a
                 compassionate teacher and now transitioned into an experienced web
                 developer who is passionate in creating an intuitive, user friendly websites. 
                 Through CareerFoundry´s Full-Stack immersion course, I’ve built up my coding
