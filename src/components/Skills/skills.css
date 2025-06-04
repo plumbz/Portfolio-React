@@ -119,4 +119,12 @@
         width: 100%;
         box-sizing: border-box;
     }
+
+    .skillTitle {
+        font-size: 2rem;
+    }
+
+    .skillDesc {
+        font-size: 0.9rem;
+    }
 }

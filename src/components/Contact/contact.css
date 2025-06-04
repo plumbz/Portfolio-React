@@ -118,7 +118,9 @@
 
 /* Responsive font and image for smaller screens */
 @media (max-width: 768px) {
-    .caseTitle {
+
+    .caseTitle,
+    .contactTitle {
         font-size: 2rem;
     }
 
@@ -130,6 +132,11 @@
 @media (max-width: 480px) {
     .caseTitle {
         font-size: 1.75rem;
+    }
+
+    .caseDesc,
+    .contactDesc {
+        font-size: 0.9rem;
     }
 
     .CaseImg {
