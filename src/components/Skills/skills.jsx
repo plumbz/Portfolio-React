@@ -5,6 +5,8 @@ import Skill from '../../assets/skill.png';
 import Hobbies from '../../assets/hobbies.png';
 import CV from '../../assets/CV.pdf';
 import Passions from  '../../assets/passion.pdf';
+import Cert from '../../assets/cert.pdf';
+import Hire from '../../assets/hireMe.png'
 
 
 const Skills = () => {
@@ -27,6 +29,14 @@ const Skills = () => {
                         <a href={CV} download className="btn">Download PDF</a>
                     </div>
                 </div>     
+                 <div className='skillBar'>
+                    <img src={Hire} alt="Cert" className='skillBarImg'/>
+                    <div className='skillBarText'>
+                        <p>The certificates I earned after completing the 500+ hours of
+                            hands-on training in CareerFoundry.</p>
+                        <a href={Cert} className="btn">Check my certificates</a>
+                    </div>
+                </div>  
                 <div className='skillBar'>
                     <img src={Skill} alt="Skill" className='skillBarImg'/>
                     <div className='skillBarText'>
@@ -39,7 +49,7 @@ const Skills = () => {
                     <img src={Hobbies} alt="Hobbies" className='skillBarImg'/>
                     <div className='skillBarText'>
                         <p>Get to know me more by viewing my favorite activities.</p>
-                        <a href={Passions} download className="btn">Check my hobbies. </a>
+                        <a href={Passions} className="btn">Check my hobbies. </a>
                     </div>
                 </div>
              </div>   
