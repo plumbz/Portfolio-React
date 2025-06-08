@@ -1,38 +1,47 @@
 #intro {
     height: calc(100vh - 4rem);
-    width: 100vw;
+    width: 100%;
     max-width: 75rem;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bg2 {
     position: absolute;
     top: 2rem;
-    margin-right: 1rem;
-    right: 0;
+    right: 1rem;
     z-index: -1;
     object-fit: cover;
-    border-radius: 60%;
+    border-radius: 50%;
+    width: 40vw;
+    max-width: 300px;
+    opacity: 0.8;
 }
 
 .introContent {
-    color: rgb(230, 221, 221);
-    width: 100vw;
+    color: #e6dddd;
+    width: 100%;
+    max-width: 40rem;
     padding: 1rem;
     font-size: 3rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 16rem;
+    gap: 1rem;
+    z-index: 1;
 }
 
 .hello {
-    font-size: 1.75rem;
-    font-weight: 100;
-    margin-bottom: 1rem;
+    color: #643f3f;
+    padding: 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .introName {
@@ -44,29 +53,47 @@
 }
 
 .introPara {
-    font-size: medium;
+    font-size: 1rem;
     font-weight: 300;
-    letter-spacing: 1px;
-    margin-top: 1rem;
-    color: rgb(100, 63, 63)
+    letter-spacing: 0.5px;
+    color: #643f3f;
+    line-height: 1.5;
 }
 
 .btn {
-    background-color: rgb(93, 88, 88);
+    background-color: #5d5858;
     color: white;
-    margin: 1rem 0;
+    margin-top: 1.5rem;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4a4545;
 }
 
 @media screen and (max-width:840px) {
     .bg {
-        right: -10vw;
+        width: 60vw;
+        top: 1rem;
+        right: -5vw;
     }
 
     .introContent {
-        font-size: 10vw;
+        font-size: 8vw;
+        text-align: center;
+        align-items: center;
+    }
+
+    .introName {
+        font-size: 2rem;
+    }
+
+    .introPara {
+        font-size: 0.9rem;
     }
 }
