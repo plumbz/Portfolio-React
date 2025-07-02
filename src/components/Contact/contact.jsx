@@ -7,6 +7,10 @@ import Github from '../../assets/github.logo.png';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import CaseStudypdf from '../../assets/caseStudy.pdf';
+import ChatTime from '../../assets/ChatTime.pdf';
+import Chat from '../../assets/Chat.png';
+import Meet from '../../assets/Meet.png';
+import MeetApp from '../../assets/MeetApp.pdf';
 
 const Contact = () => {
     const form = useRef();
@@ -39,9 +43,35 @@ const Contact = () => {
             <div className='CaseImgs'>
                 <img src={CaseStudy} alt="CaseStudy" className="CaseImg"/>
             </div>
+
              <button 
                 className="btn" 
                 onClick={() => window.open(CaseStudypdf, "_blank")}
+              >
+                See More
+              </button>
+              <div id="CaseStudy">
+              
+            </div>
+            <div className='CaseImgs'>
+                <img src={Chat} alt="CaseStudy" className="CaseImg"/>
+            </div>
+             <button 
+                className="btn" 
+                onClick={() => window.open(ChatTime, "_blank")}
+              >
+                See More
+              </button>
+                  <div id="CaseStudy">
+
+            </div>
+            <div className='CaseImgs'>
+                <img src={Meet} alt="CaseStudy" className="CaseImg"/>
+            </div>
+            
+             <button 
+                className="btn" 
+                onClick={() => window.open(MeetApp, "_blank")}
               >
                 See More
               </button>
