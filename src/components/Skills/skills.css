@@ -2,7 +2,7 @@
 
     overflow: hidden;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     max-width: 65rem;
     display: flex;
     flex-direction: column;
@@ -52,27 +52,27 @@
 .skillBars {
 
     margin: 1.5rem;
-    width: 100vw;
+    width: 100%;
     max-width: 80%;
     text-align: left;
 }
 
 .skillBar {
     display: flex;
-    margin: 2rem;
-    padding: 1.5rem;
+    overflow: hidden;
     border-radius: 0.5rem;
     background: rgb(154, 146, 146);
+    margin: 1rem 0;
 }
 
 .skillBarImg {
     object-fit: cover;
-    height: 3rem;
+    height: 4rem;
     width: 3rem;
     margin-right: 2rem;
 }
 
-.skillBarText>p {
+.skillBarText {
     font-size: 1rem;
     font-weight: 200;
     margin: 1rem;
