@@ -1,20 +1,22 @@
 #works {
     margin: 0 auto;
     min-height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 60rem;
+    width: 100%;
+    max-width: var(--max-width);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .worksTitle {
     margin: 1rem 0;
-    font-size: 3rem;
-    color: rgb(230, 221, 221);
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    color: var(--light);
+    line-height: 1.05;
 }
 
 .worksDesc {
@@ -23,15 +25,19 @@
     font-size: 1rem;
     font-weight: 300;
     max-width: 45rem;
+    line-height: 1.5;
 }
 
 .worksImgs {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     max-width: 65rem;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+
 }
 
 .worksImg {
@@ -44,6 +50,7 @@
 }
 
 .modalLink {
+    display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     background-color: white;
@@ -60,7 +67,7 @@
 
 @media screen and (max-width:585px) {
     .worksImg {
-        height: 48vw;
+        height: 30rem;
     }
 
 }
@@ -68,6 +75,12 @@
 .worksImgWrapper {
     position: relative;
     display: inline-block;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: #d5cbcb;
+    height: 25rem;
+    /* fallback while image loads */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 .modalOverlay {
