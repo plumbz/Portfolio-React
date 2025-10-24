@@ -1,99 +1,146 @@
 #intro {
-    height: calc(100vh - 4rem);
+    min-height: 100vh;
     width: 100%;
-    max-width: 75rem;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    padding: 0 1rem;
+    background-color: #E8E4A0;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.bg2 {
-    position: absolute;
-    top: 2rem;
-    right: 1rem;
-    z-index: -1;
-    object-fit: cover;
-    border-radius: 50%;
-    width: 40vw;
-    max-width: 300px;
-    opacity: 0.8;
+    padding: 2rem;
+    position: relative;
 }
 
 .introContent {
-    color: #e6dddd;
-    width: 100%;
-    max-width: 40rem;
-    padding: 1rem;
-    font-size: 3rem;
-    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    /* vertically center */
+    left: 10%;
+    /* align to the left */
+    transform: translateY(-50%);
+    /* vertically center accurately */
     display: flex;
+    /* ensure flex properties work */
     flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    z-index: 1;
+    gap: 1.5rem;
+    max-width: 50%;
+    padding-left: 2rem;
+    /* optional spacing from the edge */
+    z-index: 2;
 }
 
 .hello {
-    color: #643f3f;
-    padding: 0.5rem 0;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #3d3d3d;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.2;
+}
+
+.introText {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #3d3d3d;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.2;
 }
 
 .introName {
-    color: rgb(100, 63, 63);
-    padding: 10px;
-    margin-bottom: 1rem;
-
-
+    color: #3d3d3d;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 400;
 }
 
 .introPara {
-    font-size: 1rem;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    color: #643f3f;
-    line-height: 1.5;
+    font-size: 1.25rem;
+    color: #5a5a5a;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-top: 0.5rem;
 }
 
-.btn {
-    background-color: #5d5858;
-    color: white;
-    margin-top: 1.5rem;
-    padding: 0.75rem 1.5rem;
-    border: none;
+.pp {
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 28vw;
+    max-width: 510px;
+    height: auto;
+    object-fit: cover;
     border-radius: 2rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
-.btn:hover {
-    background-color: #4a4545;
-}
-
-@media screen and (max-width:840px) {
-    .bg {
-        width: 60vw;
-        top: 1rem;
-        right: -5vw;
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    #intro {
+        flex-direction: column;
+        text-align: left;
+        padding: 2rem 2rem;
     }
 
     .introContent {
-        font-size: 8vw;
-        text-align: center;
+        max-width: 80%;
         align-items: center;
     }
 
-    .introName {
+    .hello,
+    .introText {
+        font-size: 2.5rem;
+    }
+
+    .pp {
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: none;
+        width: 60vw;
+        max-width: 400px;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .hello,
+    .introText {
+        font-size: 2.5rem;
+    }
+
+    .introPara {
+        font-size: 1.1rem;
+    }
+
+    .introPara br {
+        display: none;
+    }
+
+    .pp {
+        width: 70vw;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #intro {
+        padding: 2rem 1rem;
+    }
+
+    .hello,
+    .introText {
         font-size: 2rem;
     }
 
     .introPara {
-        font-size: 0.9rem;
+        font-size: 1rem;
+    }
+
+    .introContent {
+        max-width: 100%;
+    }
+
+    .pp {
+        width: 80vw;
+        max-width: 300px;
     }
 }

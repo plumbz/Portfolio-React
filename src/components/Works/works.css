@@ -10,6 +10,7 @@
     text-align: center;
     padding: 0 1rem;
     box-sizing: border-box;
+    background-color: rgb(248, 244, 244);
 }
 
 .worksTitle {
@@ -17,6 +18,8 @@
     font-size: clamp(1.75rem, 4vw, 3rem);
     color: var(--light);
     line-height: 1.05;
+    font-family: rosemarine, sans-serif;
+    color: #3d3d3d;
 }
 
 .worksDesc {

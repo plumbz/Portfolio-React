@@ -2,7 +2,7 @@
     background: rgb(248, 244, 244);
     height: 5rem;
     width: 100vw;
-    max-width: 75rem;
+    /* max-width: 75rem; */
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
@@ -23,6 +23,23 @@
     cursor: pointer;
     color: rgb(93, 88, 88);
     font-size: 1.2rem;
+}
+
+.desktopMenuLogo {
+    margin: 1rem;
+    cursor: pointer;
+    color: rgb(93, 88, 88);
+    font-size: 1.5rem;
+    color: #3d3d3d;
+    font-family: Georgia, 'Times New Roman', serif;
+    text-decoration: none;
+}
+
+.desktopMenuLogo.active {
+    text-decoration: none;
+    /* removes underline when active */
+    color: #3d3d3d;
+    /* keep same color as normal state */
 }
 
 .desktopMenuListItem:hover {
