@@ -72,20 +72,19 @@
     line-height: 1.6;
 }
 
-.modalLink {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: white;
-    color: rgb(93, 88, 88);
+.btn {
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+    background: #565454;
+    color: white;
     text-decoration: none;
-    border-radius: 1rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    font-weight: 600;
 }
 
-.modalLink:hover {
-    background-color: rgb(230, 230, 230);
+.btn.outline {
+    background: transparent;
+    border: 2px solid #3d3d3d;
+    color: #3d3d3d;
 }
 
 @media screen and (max-width:585px) {
