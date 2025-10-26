@@ -1,9 +1,0 @@
-.Container {
-    max-width: 1800px;
-    /* Change to smaller width if you want */
-    margin: 0 auto;
-    /* Center the content */
-    padding: 0 1.5rem;
-    /* Prevent content touching screen edges */
-    background-color: rgb(221, 208, 208);
-}
