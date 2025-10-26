@@ -26,7 +26,7 @@ const portfolioItems = [
     link: "https://meet-f7gvyt75m-plumbzs-projects.vercel.app",
    github: "https://github.com/plumbz/meet"  },
 
-  {  img: Portfolio5,
+  {   img: Portfolio5,
     title: "Chat Time",
     desc: "ChatTime is a chat app for mobile devices that built with React Native. The app will provide users with a chat interface and option to sare images and thier location.",
     link: "https://plumbz/ChatTime", 
@@ -48,34 +48,49 @@ const portfolioItems = [
 ]
 
 const Works = () => {
- 
+    const [hoveredIndex, setHoveredIndex] = useState(null);
     return (
         <section id='works'> 
             <h2 className='worksTitle'>Projects</h2>
-            <p className="worksDesc">I take pride in paying attention the smallest details and making sure that my work is well made.
+            <span className="worksDesc">I take pride in paying attention the smallest details and making sure that my work is well made.
                 I am excited to bring my skills and experience to help business achieve thier goals and create a strong online presence.
-            </p>
-
-         <div className="projectsGrid">
+            </span>
+            <div className='worksImgs'>
         {portfolioItems.map((item, index) => (
-          <div className={`projectCard ${index % 2 !== 0 ? "reverse" : ""}`} key={index}>
-            <img src={item.img} alt={item.title} className="projectImg" />
-            <div className="projectInfo">
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
-              <div className="projectButtons">
-                {item.link && (
-                  <a href={item.link} target="_blank" rel="noreferrer" className="btn">
-                    View Live
-                  </a>
-                )}
-                {item.github && (
-                  <a href={item.github} target="_blank" rel="noreferrer" className="btn outline">
-                    View Code
-                  </a>
-                )}
+          <div
+            key={index}
+            className="worksImgWrapper"
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <img src={item.img} alt={`Portfolio${index + 1}`} className="worksImg" />
+            {hoveredIndex === index && (
+              <div className="modalOverlay">
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+            {item.link && (
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="modalLink"
+              >
+                View Live
+              </a>
+            )}
+            {item.github && (
+              <a
+                href={item.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="modalLink"
+              >
+                View Code
+              </a>
+            )}
+
               </div>
-            </div>
+            )}
           </div>
         ))}
       </div>
