@@ -11,7 +11,7 @@ function App() {
   
   return (
     <>
-      <div className="Container">
+      <div className="App">
         <Navbar/>
         <Intro/>
         <Works/>
