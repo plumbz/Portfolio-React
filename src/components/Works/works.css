@@ -1,3 +1,11 @@
+:root {
+    --bg: #e3e3d0;
+    --card-bg: #d7d7c4;
+    --text: #2e2e29;
+    --button: #2f3026;
+    --radius: 18px;
+}
+
 #works {
     margin: 0 auto;
     min-height: calc(100vh - 4rem);
@@ -82,6 +90,7 @@
     height: 25rem;
     /* fallback while image loads */
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+
 }
 
 .modalOverlay {
