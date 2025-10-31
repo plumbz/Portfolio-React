@@ -1,88 +1,84 @@
-#contactPage {
-    min-height: calc(100vh - 4rem);
-    background-color: rgb(248, 244, 244);
-    overflow: hidden;
-    width: 100%;
-    /* max-width: 60rem;
-     */
-    display: grid;
-    flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* text-align: center; */
-    margin: 0 auto;
-
-}
-
-.CaseImg {
-    /* object-fit: cover; */
-    width: 50%;
-    margin: auto;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2%;
+#caseStudy {
+    background-color: #f8f4f4;
+    min-height: 100vh;
+    padding: 3rem 1rem;
+    text-align: center;
 }
 
 .caseTitle {
-    color: rgb(230, 221, 221);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    color: #3a2f2f;
 }
 
 .caseDesc {
-    color: rgb(100, 63, 63);
-    margin: 1rem 0;
+    color: #5a4b4b;
     font-size: 1rem;
-    font-weight: 300;
-    max-width: 45rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
 }
 
-.submitBtn {
-    background-color: rgb(149, 149, 150);
-    border: none;
-    padding: 0.75rem 3.5rem;
-    border-radius: 0.5rem;
+.caseGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0;
+    justify-items: center;
 }
 
-.link {
+.caseCard {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caseCard h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+    color: #2e2e2e;
+}
+
+.caseCard p {
+    font-size: 0.95rem;
+    color: #444;
+    flex-grow: 1;
+}
+
+.caseImg {
+    width: 100%;
+    border-radius: 10px;
     object-fit: cover;
-    height: 3rem;
-    width: 3rem;
-    margin-top: 2rem;
-    margin: 1rem;
-    padding: auto;
+    margin-bottom: 1rem;
 }
 
+.seeMoreBtn {
+    background-color: #3a3a2f;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    align-self: start;
+}
 
-/* Responsive font and image for smaller screens */
+.seeMoreBtn:hover {
+    background-color: #4f4f3c;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-
-    .caseTitle,
-    .contactTitle {
+    .caseTitle {
         font-size: 2rem;
     }
 
-    .CaseImg {
-        height: 200px;
-    }
-}
-
-@media (max-width: 480px) {
-    .caseTitle {
-        font-size: 1.75rem;
-    }
-
-    .caseDesc,
-    .contactDesc {
-        font-size: 0.9rem;
-    }
-
-    .CaseImg {
-        height: 150px;
+    .caseCard {
+        max-width: 100%;
     }
 }
