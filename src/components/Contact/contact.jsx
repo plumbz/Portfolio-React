@@ -1,16 +1,10 @@
 import React from 'react';
-import './contact.css';
-import CaseStudy from '../../assets/CaseStudy.png';
+import './Contact.css';
 import Facebook from '../../assets/fb.logo.png';
 import Yahoo from '../../assets/yahoo.logo.png';
 import Github from '../../assets/github.logo.png';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
-import CaseStudypdf from '../../assets/caseStudy.pdf';
-import ChatTime from '../../assets/ChatTime.pdf';
-import Chat from '../../assets/Chat.png';
-import Meet from '../../assets/Meet.png';
-import MeetApp from '../../assets/MeetApp.pdf';
 
 const Contact = () => {
     const form = useRef();
@@ -34,47 +28,7 @@ const Contact = () => {
     };
     return (
        <section id="contactPage">
-            <div id="CaseStudy">
-                <h2 className="caseTitle">My Case Study</h2>
-                <p className="caseDesc">a presentation of my projects in a form of case study. 
-                    Here narates how I solve the problem and achieved the objective over the
-                    course of my completing project.</p>
-            </div>
-            <div className='CaseImgs'>
-                <img src={CaseStudy} alt="CaseStudy" className="CaseImg"/>
-            </div>
-
-             <button 
-                className="btn" 
-                onClick={() => window.open(CaseStudypdf, "_blank")}
-              >
-                See More
-              </button>
-              <div id="CaseStudy">
-              
-            </div>
-            <div className='CaseImgs'>
-                <img src={Chat} alt="CaseStudy" className="CaseImg"/>
-            </div>
-             <button 
-                className="btn" 
-                onClick={() => window.open(ChatTime, "_blank")}
-              >
-                See More
-              </button>
-                  <div id="CaseStudy">
-
-            </div>
-            <div className='CaseImgs'>
-                <img src={Meet} alt="CaseStudy" className="CaseImg"/>
-            </div>
-            
-             <button 
-                className="btn" 
-                onClick={() => window.open(MeetApp, "_blank")}
-              >
-                See More
-              </button>
+          
             <div id="contact">
                 <h1 className="contactTitle">Contact Me</h1>
                 <span className="contactDesc">Please fill out the form below to discuss any work opportunities.</span>

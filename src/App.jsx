@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/navbar";
 import Intro from "./components/Intro/intro";
 import Skills from "./components/Skills/skills";
 import Works from "./components/Works/works";
-
+import CaseStudy from "./components/CaseStudy/caseStudy";
 import Contact from "./components/Contact/contact";
 import Footer from "./components/Footer/footer";
 
@@ -15,8 +15,8 @@ function App() {
         <Navbar/>
         <Intro/>
         <Works/>
-     
         <Skills/>
+        <CaseStudy/>
         <Contact/>
         <Footer/>
       </div>
