@@ -10,11 +10,12 @@
     font-weight: 600;
     margin-bottom: 1rem;
     color: #3a2f2f;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 
 .caseDesc {
     color: #5a4b4b;
-    font-size: 1rem;
+    font-size: 1.3rem;
     max-width: 700px;
     margin: 0 auto 3rem;
 }
