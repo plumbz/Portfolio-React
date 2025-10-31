@@ -1,13 +1,13 @@
 import React from 'react';
 import './skills.css';
 
-import Resume from '../../assets/resume.png';
-import Skill from '../../assets/skill.png';
+import Cv from '../../assets/cv.png';
+import Certies from '../../assets/certies.png';
 import Hobbies from '../../assets/hobbies.png';
 import CV from '../../assets/CV.pdf';
 import Passions from '../../assets/passion.pdf';
 import Cert from '../../assets/cert.pdf';
-import Hire from '../../assets/hireMe.png';
+import JS from '../../assets/js.png';
 
 const Skills = () => {
   return (
@@ -32,21 +32,21 @@ const Skills = () => {
 
         <div className="about-cards">
           <div className="about-card">
-            <img src={Resume} alt="CV" />
+            <img src={Cv} alt="CV" />
             <h3>Curriculum Vitae</h3>
             <p>Learn my professional background by downloading my CV.</p>
             <a href={CV} download className="about-btn">Download PDF</a>
           </div>
 
           <div className="about-card">
-            <img src={Hire} alt="Certificates" />
+            <img src={Certies} alt="Certificates" />
             <h3>Certificates</h3>
             <p>The certificates I earned after completing 500+ hours of training.</p>
             <a href={Cert} target="_blank" rel="noreferrer" className="about-btn">Check my certificates</a>
           </div>
 
           <div className="about-card">
-            <img src={Skill} alt="Skills" />
+            <img src={JS} alt="Skills" />
             <h3>Job Skills</h3>
             <p>These are the skills I acquired throughout my experience.</p>
             <a className="about-btn" href="https://github.com/plumbz/Portfolio-website" target="_blank" rel="noreferrer">
