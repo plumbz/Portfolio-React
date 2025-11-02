@@ -16,11 +16,11 @@ const Navbar = () => {
             
             <Link activeClass="active" to="works" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Projects</Link>
             <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">About</Link>
-            <Link activeClass="active" to="CaseStudy" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">CaseStudy</Link>
-        
+            <Link activeClass="active" to="caseStudy" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">CaseStudy</Link>
+
         </div>
         <button className='desktopMenuBtn'onClick={() => {
-            document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+            document.getElementById('contactPage').scrollIntoView({behavior: 'smooth'});
         }}>
             <img src= "" alt="" className='desktopMenuImg' />Contact Me</button>
 
@@ -29,8 +29,8 @@ const Navbar = () => {
             <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Home</Link>
             <Link activeClass="active" to="works" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Projects</Link>
             <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>About</Link>
-            <Link activeClass="active" to="CaseStudy" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>CaseStudy</Link>
-            <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Contact</Link>
+            <Link activeClass="active" to="caseStudy" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>CaseStudy</Link>
+            <Link activeClass="active" to="contactPage" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuBtn" onClick={()=>setShowMenu(false)}>Contact</Link>
         </div>
     </nav>
     )

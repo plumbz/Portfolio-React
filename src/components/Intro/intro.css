@@ -11,9 +11,9 @@
 
 .introContent {
     position: absolute;
-    top: 42%;
+    top: 45%;
     /* vertically center */
-    left: 23%;
+    left: 16%;
     /* align to the left */
     transform: translateY(-50%);
     /* vertically center accurately */
@@ -28,7 +28,7 @@
 }
 
 .hello {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 400;
     color: #3d3d3d;
     font-family: Georgia, 'Times New Roman', serif;
@@ -36,7 +36,7 @@
 }
 
 .introText {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #3d3d3d;
     font-family: Georgia, 'Times New Roman', serif;
@@ -50,7 +50,7 @@
 }
 
 .introPara {
-    font-size: 1.50rem;
+    font-size: 1.3rem;
     color: #5a5a5a;
     line-height: 1.6;
     max-width: 600px;
@@ -59,7 +59,7 @@
 
 .pp {
     position: absolute;
-    right: 20%;
+    right: 16%;
     top: 40%;
     transform: translateY(-50%);
     width: 28vw;
