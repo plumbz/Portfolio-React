@@ -1,13 +1,18 @@
 #works {
     margin: 0 auto;
-    min-height: 100vh;
+    height: calc(120vh - 1rem);
     width: 100%;
-    max-width: var(--max-width);
+    max-width: 100rem;
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 2rem 5rem;
+    /* overflow: hidden; */
+    padding: 4rem 0;
     box-sizing: border-box;
+
+}
+
+body {
     background-color: rgb(248, 244, 244);
 }
 
@@ -28,7 +33,7 @@
 
     font-size: 1.3rem;
     font-weight: 300;
-    max-width: 45rem;
+    /* max-width: 45rem; */
     line-height: 1.5;
 }
 

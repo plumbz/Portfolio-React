@@ -9,7 +9,7 @@
 #skills {
     margin: 0 auto;
     min-height: calc(100vh - 4rem);
-    width: 100%;
+    width: 100vw;
     max-width: var(--max-width);
     display: flex;
     font-family: Georgia, 'Times New Roman', serif;
