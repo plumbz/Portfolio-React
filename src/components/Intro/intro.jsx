@@ -13,7 +13,7 @@ const Intro = () => {
                     I am a passionate web developer with experience in creating <br/>
                     responsive and user-friendly websites.
                 </p>
-                <Link 
+                {/* <Link 
                     to="projects" 
                     smooth={true} 
                     duration={500}
@@ -29,7 +29,7 @@ const Intro = () => {
                     >
                         <path d="M12 5v14M19 12l-7 7-7-7"/>
                     </svg>
-                </Link>
+                </Link> */}
             </div>
             <img src={pp} alt="Profile" className='pp' />
         </section>

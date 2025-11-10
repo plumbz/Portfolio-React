@@ -1,6 +1,7 @@
 #caseStudy {
     background-color: #f8f4f4;
     min-height: 100vh;
+    width: 100;
     padding: 4rem 1rem;
     text-align: center;
     max-width: var(--max-width);
