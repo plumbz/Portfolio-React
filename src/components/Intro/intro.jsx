@@ -7,11 +7,10 @@ const Intro = () => {
     return (
         <section id="intro">
             <div className="introContent">
-                <span className="hello">Hello,</span>
-                <span className="introText">I'm <span className='introName'>Plumby</span> <br />Website Developer</span>
+                <span className="introText">Hello, I'm <span className='introName'>Plumby</span> <br />Website Developer</span>
                 <p className="introPara">
                     I am a passionate web developer with experience in creating <br/>
-                    responsive and user-friendly websites.
+                    responsive and user-friendly websites. Scroll down to see, what I can do. <br/>
                 </p>
                 {/* <Link 
                     to="projects" 

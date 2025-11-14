@@ -1,17 +1,20 @@
 #intro {
-    min-height: 100vh;
+    margin: 0 auto;
+    height: calc(120vh - 1rem);
     width: 100%;
-    background-color: #E8E4A0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* max-width: 120rem; */
+    flex-direction: column;
+    text-align: left;
     padding: 2rem;
     position: relative;
+    background-color: #E8E4A0;
 }
+
 
 .introContent {
     position: absolute;
-    top: 45%;
+    top: 37%;
     /* vertically center */
     left: 16%;
     /* align to the left */
@@ -27,16 +30,11 @@
     z-index: 2;
 }
 
+
+
+.introText,
 .hello {
     font-size: 4rem;
-    font-weight: 400;
-    color: #3d3d3d;
-    font-family: Georgia, 'Times New Roman', serif;
-    line-height: 1.2;
-}
-
-.introText {
-    font-size: 3rem;
     font-weight: 400;
     color: #3d3d3d;
     font-family: Georgia, 'Times New Roman', serif;

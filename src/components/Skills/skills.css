@@ -36,6 +36,7 @@
     gap: 50px;
     padding: 0 20px;
     border: #2f3026;
+
 }
 
 .about-text p {
@@ -52,21 +53,23 @@
     gap: 18px;
     margin-top: 30px;
     border: #2f3026;
+
 }
 
 .about-card {
     background: var(--card-bg);
+    border: 1px solid #333;
     border-radius: var(--radius);
-    padding: 24px;
+    padding: 20px;
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    border: #000000;
+    gap: 40px;
+    /* border: #000000; */
 }
 
 .about-card img {
-    width: 42px;
+    width: 60px;
     height: auto;
 }
 
@@ -83,14 +86,15 @@
 }
 
 .about-btn {
-    background: var(--button);
-    color: #fff;
-    padding: 10px;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 0.85rem;
-    text-decoration: none;
-    transition: opacity 0.3s;
+    border: 1px solid #333;
+    color: #e3e3d0;
+    border-radius: 25px;
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    background: #3d3d3d;
+    transition: 0.3s;
 }
 
 .about-btn:hover {
