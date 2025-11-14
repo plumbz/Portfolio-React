@@ -8,25 +8,29 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    /* allows items to wrap instead of overflowing */
     position: sticky;
     top: 0;
     z-index: 3;
+    box-sizing: border-box;
+
 }
 
 .logo {
     object-fit: cover;
-
+    height: 2.5rem;
 }
 
 .desktopMenuListItem {
-    margin: 1rem;
+    margin: 0 1rem;
     cursor: pointer;
     color: rgb(93, 88, 88);
     font-size: 1.2rem;
 }
 
 .desktopMenuLogo {
-    margin: 16rem;
+    margin: 0 11rem;
     cursor: pointer;
     color: rgb(93, 88, 88);
     font-size: 1.5rem;
@@ -68,9 +72,9 @@
 }
 
 .active {
-    color: rgb(105, 77, 77);
+    color: #3d3d3d;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid rgb(105, 77, 77);
+    border-bottom: 3px solid #3d3d3d;
 
 }
 
@@ -78,40 +82,91 @@
     display: none;
     object-fit: cover;
     height: 1.8rem;
+    width: 1.8rem;
 }
 
 .navMenu {
     position: absolute;
     top: 5rem;
-    right: 2rem;
+    right: 1rem;
     z-index: 2;
-    display: flex;
+    display: none;
     flex-direction: column;
-    padding: 0.5rem;
-    height: fit-content;
+    padding: 0.75rem;
+    /* height: fit-content; */
     min-width: 15rem;
-    background-color: rgb(163, 143, 143);
+    background-color: #d1d1c3;
+    color: #686666;
     border-radius: 1rem;
     /* rgb(143, 114, 114) */
     cursor: pointer;
 }
 
 .listItem {
-    padding: 0.25rem 2rem;
+    padding: 0.6rem 2rem;
     margin: 0.25rem;
     /* background: rgb(142, 121, 121); */
 }
 
-@media screen and (max-width:840px) {
-    .mobMenu {
-        display: flex;
+@media screen and (max-width:967px) {
+    .desktopMenuBtn {
+        margin-right: 0 !important;
     }
 
-    .desktopMenu {
-        display: none;
+    .mobMenu,
+    .navMenu {
+        display: block;
     }
 
+    .desktopMenu,
     .desktopMenuBtn {
         display: none;
+    }
+}
+
+/* SMALL PHONES (iPhone SE, Android small) */
+@media screen and (max-width: 500px) {
+
+    .navbar {
+        padding: 0.8rem 1rem;
+        height: 4.5rem;
+    }
+
+    .mobMenu {
+        height: 1.6rem;
+        /* smaller icon */
+        width: 1.6rem;
+        display: block !important;
+    }
+
+    .navMenu {
+        right: 0.5rem;
+        min-width: 11rem;
+        padding: 0.5rem 0;
+    }
+
+    .listItem {
+        font-size: 1rem;
+        padding: 0.5rem 1.2rem;
+    }
+}
+
+/* VERY SMALL DEVICES (330px - 380px) */
+@media screen and (max-width: 380px) {
+
+    .mobMenu {
+        height: 1.4rem;
+        width: 1.4rem;
+        display: block !important;
+    }
+
+    .navMenu {
+        min-width: 10rem;
+        right: 0.3rem;
+    }
+
+    .listItem {
+        font-size: 0.95rem;
+        padding: 0.45rem 1rem;
     }
 }
