@@ -75,14 +75,16 @@
     #intro {
         flex-direction: column;
         text-align: left;
-        padding: 4rem 6rem;
+        padding: 4rem 4rem;
         overflow: hidden;
     }
 
     .introContent {
         max-width: 70%;
-        /* text-align: left; */
-        padding: 4rem 6rem 2rem;
+        text-align: left;
+        padding: 4rem 3rem;
+        margin-top: 4rem;
+
     }
 
     .hello,
@@ -95,6 +97,8 @@
         /* position: relative; */
         right: 0;
         top: 0;
+        margin-top: 1rem;
+        margin-right: 4rem;
         transform: none;
         width: 60vw;
         max-width: 400px;
@@ -102,36 +106,41 @@
     }
 }
 
-@media screen and (max-width: 844px) {
-    @media screen and (max-width: 844px) {
-        .introContent {
-            position: static;
-            transform: none;
-            max-width: 100%;
-            padding-left: 0;
-        }
 
-        .pp {
-            position: static;
-            transform: none;
-            margin: 2rem auto 0;
-            display: block;
-            width: 70vw;
-            max-width: 300px;
-        }
+@media screen and (max-width: 944px) {
+    #intro {
+        height: auto;
+        overflow: visible;
+        padding-bottom: 4rem 2rem;
     }
 
+    .introContent {
+        position: static;
+        transform: none;
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .pp {
+        position: static;
+        transform: none;
+        margin: 2rem auto 0;
+        display: block;
+        width: 70vw;
+        max-width: 300px;
+    }
 }
 
-@m@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .introContent {
         position: static;
         transform: none;
         max-width: 100%;
     }
 
+
     .pp {
-        position: static;
+        position: relative;
         transform: none;
         margin: 2rem auto 0;
         width: 80vw;
