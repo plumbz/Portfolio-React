@@ -9,6 +9,7 @@
     padding: 2rem;
     position: relative;
     background-color: #E8E4A0;
+    overflow: hidden;
 }
 
 
@@ -70,74 +71,69 @@
 }
 
 /* Responsive Design */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1554px) {
     #intro {
         flex-direction: column;
         text-align: left;
-        padding: 2rem 2rem;
+        padding: 4rem 6rem;
+        overflow: hidden;
     }
 
     .introContent {
-        max-width: 80%;
-        align-items: center;
-    }
-
-    .hello,
-    .introText {
-        font-size: 2.5rem;
-    }
-
-    .pp {
-        position: relative;
-        right: 0;
-        top: 0;
-        transform: none;
-        width: 60vw;
-        max-width: 400px;
-        margin-top: 2rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    .hello,
-    .introText {
-        font-size: 2.5rem;
-    }
-
-    .introPara {
-        font-size: 1.1rem;
-    }
-
-    .introPara br {
-        display: none;
-    }
-
-    .pp {
-        width: 70vw;
-        max-width: 350px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #intro {
-        padding: 2rem 1rem;
+        max-width: 70%;
+        /* text-align: left; */
+        padding: 4rem 6rem 2rem;
     }
 
     .hello,
     .introText {
         font-size: 2rem;
+        text-align: left;
     }
 
-    .introPara {
-        font-size: 1rem;
+    .pp {
+        /* position: relative; */
+        right: 0;
+        top: 0;
+        transform: none;
+        width: 60vw;
+        max-width: 400px;
+        /* margin-top: 2rem; */
+    }
+}
+
+@media screen and (max-width: 844px) {
+    @media screen and (max-width: 844px) {
+        .introContent {
+            position: static;
+            transform: none;
+            max-width: 100%;
+            padding-left: 0;
+        }
+
+        .pp {
+            position: static;
+            transform: none;
+            margin: 2rem auto 0;
+            display: block;
+            width: 70vw;
+            max-width: 300px;
+        }
     }
 
+}
+
+@m@media screen and (max-width: 480px) {
     .introContent {
+        position: static;
+        transform: none;
         max-width: 100%;
     }
 
     .pp {
+        position: static;
+        transform: none;
+        margin: 2rem auto 0;
         width: 80vw;
         max-width: 300px;
     }

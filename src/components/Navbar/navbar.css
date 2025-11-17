@@ -108,21 +108,34 @@
     /* background: rgb(142, 121, 121); */
 }
 
-@media screen and (max-width:967px) {
+@media screen and (max-width: 1320px) {
     .desktopMenuBtn {
-        margin-right: 0 !important;
+        /* margin-right: 2rem; */
+        display: none;
     }
 
-    .mobMenu,
-    .navMenu {
+    .mobMenu {
         display: block;
     }
+}
+
+@media screen and (max-width: 967px) {
 
     .desktopMenu,
     .desktopMenuBtn {
         display: none;
     }
+
+    .mobMenu {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        /* keeps logo + icon aligned */
+    }
 }
+
 
 /* SMALL PHONES (iPhone SE, Android small) */
 @media screen and (max-width: 500px) {
@@ -136,12 +149,12 @@
         height: 1.6rem;
         /* smaller icon */
         width: 1.6rem;
-        display: block !important;
+        display: block;
     }
 
     .navMenu {
         right: 0.5rem;
-        min-width: 11rem;
+        min-width: 5rem;
         padding: 0.5rem 0;
     }
 
@@ -157,7 +170,7 @@
     .mobMenu {
         height: 1.4rem;
         width: 1.4rem;
-        display: block !important;
+        display: block;
     }
 
     .navMenu {
